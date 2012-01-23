@@ -43,7 +43,6 @@ fi
 
 export PATH=$HOME/.cabal/bin:/var/lib/gems/1.8/bin:$HOME/.local/bin:$HOME/bin:$PATH
 CDPATH=".:Dokumenty/skola/podzim 2011"
-#export GEM_HOME=$HOME/.gem:/usr/lib/ruby/gems/1.8
 
 export LESS=" -R"
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
@@ -52,11 +51,6 @@ export EDITOR="vim"
 
 case "$TERM" in
     xterm*)
-
-    # Set command as title name
-    # reset title of the terminal after each command
-#    trap 'set_title "$BASH_COMMAND"' DEBUG
-#    PROMPT_COMMAND="set_title Terminal"
 
     # My fancy prompt that displays error code of last command (if it failed)
     PS1="\[$YELLOW\]\h\[$NORMAL\]:\w \[$REDB\]"'$(R=$?; if [ $R -ne 0 ];then echo -ne "($R) ";fi)'"\[$NORMAL\]\n\$ "
