@@ -1,0 +1,44 @@
+#! /bin/bash
+
+BOLD="$(tput bold)"
+
+BLUE="$(tput setf 1)"
+BLUEB="$BLUE$BOLD"
+
+GREEN="$(tput setf 2)"
+GREENB="$GREEN$BOLD"
+
+AZURE="$(tput setf 3)"
+AZUREB="$AZURE$BOLD"
+
+RED="$(tput setf 4)"
+REDB="$RED$BOLD"
+
+PURPLE="$(tput setf 5)"
+PURPLEB="$PURPLE$BOLD"
+
+YELLOW="$(tput setf 6)"
+YELLOWB="$YELLOW$BOLD"
+
+WHITE="$(tput setf 7)"
+WHITEB="$WHITE$BOLD"
+
+NORMAL="$(tput sgr0)"
+
+file=$(basename $0)
+if [ $file = ".term_colors" ]; then
+    echo -n "${BLUE}normal blue$NORMAL\t"
+    echo "${BLUEB}bold blue$NORMAL"
+    echo -n "${RED}normal red$NORMAL\t"
+    echo "${REDB}bold red$NORMAL"
+    echo -n "${GREEN}normal green$NORMAL\t"
+    echo "${GREENB}bold green$NORMAL"
+    echo -n "${YELLOW}normal yellow$NORMAL\t"
+    echo "${YELLOWB}bold yellow$NORMAL"
+    echo -n "${AZURE}normal azure$NORMAL\t"
+    echo "${AZUREB}bold azure$NORMAL"
+    echo -n "${WHITE}normal white$NORMAL\t"
+    echo "${WHITEB}bold white$NORMAL"
+fi
+
+# vim: ft=sh
