@@ -24,7 +24,7 @@ set wildmenu
 set wildmode=list:longest
 set wildignore+=*.o,*.hi,*.aux,*.out,*.toc,.hg,.git,.svn
 set undofile
-set undodir=/home/lubik/.vim/undo,.
+set undodir=$HOME/.vim/undo,.
 
 set spelllang=cs
 set nojoinspaces
