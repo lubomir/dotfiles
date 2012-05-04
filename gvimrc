@@ -16,7 +16,7 @@ set guicursor+=a:blinkon600-blinkoff600
 set mouse=
 set mousefocus
 
-set guifont=Terminus\ 12
+"set guifont=Terminus\ 12
 
 let g:disablerecent = 0
 let g:manpageview_pgm = "$HOME/.bin/man.sh"
