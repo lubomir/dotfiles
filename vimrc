@@ -71,3 +71,7 @@ nmap <C-Down> ddp
 " Bubble multiple lines
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
+
+" Highlight invisible characters
+set listchars=tab:▸\ ,eol:¬
+map <leader>l :set list!<CR>
