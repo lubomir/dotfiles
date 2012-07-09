@@ -33,6 +33,7 @@ set completeopt=longest,menuone
 
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4 " backspace deletes up to 4 spaces
 set expandtab
 
 set foldmethod=syntax
