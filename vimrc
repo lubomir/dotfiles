@@ -1,3 +1,6 @@
+" Enable pathogen
+call pathogen#infect()
+
 set nocompatible
 
 set exrc
