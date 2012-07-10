@@ -79,3 +79,5 @@ vmap <C-Down> xp`[V`]
 " Highlight invisible characters
 set listchars=tab:▸\ ,eol:¬
 map <leader>l :set list!<CR>
+
+nnoremap <F6> :GundoToggle<CR>
