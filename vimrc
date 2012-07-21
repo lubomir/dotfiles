@@ -25,7 +25,7 @@ set showcmd
 set showbreak=↪
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*.o,*.hi,*.aux,*.out,*.toc,.hg,.git,.svn
+set wildignore+=*.o,*.hi,*.aux,*.out,*.toc,.hg,.git,.svn,*.dep
 set undofile
 set undodir=$HOME/.vim/undo,.
 
