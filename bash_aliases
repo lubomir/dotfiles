@@ -14,3 +14,4 @@ alias rlsicstus='rlwrap -O "^\|" -pBLUE -g "^.$" sicstus'
 alias fix-pager="xprop -root -f _NET_DESKTOP_GEOMETRY 32c -set _NET_DESKTOP_GEOMETRY"
 alias fix-notifications="xprop -f _NET_WORKAREA 32cccc -set _NET_WORKAREA 0,28,1680,1022 -root"
 alias pucmeloud="cat ~/Dokumenty/pucmeloud.txt"
+alias todo="todo -f +children"
