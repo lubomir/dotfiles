@@ -55,8 +55,6 @@ let g:haddock_browser = "epiphany"
 let g:haddock_browser_callformat = "%s --new-tab %s"
 let g:haddock_indexfiledir="$HOME/.vim/"
 
-au Bufenter *.hs compiler ghc
-
 au BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 au BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 
