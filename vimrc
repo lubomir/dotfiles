@@ -58,6 +58,8 @@ let g:haddock_indexfiledir="$HOME/.vim/"
 if has("gui_running")
     let g:Powerline_symbols = 'fancy'
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+else
+    let g:Powerline_loaded = 1
 endif
 
 au BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
