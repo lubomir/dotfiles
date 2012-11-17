@@ -62,6 +62,9 @@ else
     let g:Powerline_loaded = 1
 endif
 
+" Resize windows when terminal window changes size
+au VimResized * exe "normal! \<c-w>="
+
 au BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 au BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 
