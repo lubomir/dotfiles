@@ -14,7 +14,6 @@ set laststatus=2
 set guioptions=acim
 set guicursor+=a:blinkon600-blinkoff600
 set mouse=
-set mousefocus
 
 "set guifont=Terminus\ 12
 
