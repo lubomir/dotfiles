@@ -76,6 +76,7 @@ runtime! indent.vim
 map <F5>r :syntax off:syntax on
 map <F5>h /\(^\\| \)[iovksvzu]\( \\|$\)/
 map <F5>f :set textwidth=75
+map <Leader><Space> :noh<Cr>
 
 " Bubble single lines
 nmap <C-Up> ddkP
