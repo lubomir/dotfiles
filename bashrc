@@ -69,3 +69,5 @@ complete -W "status help puburl stop running start filestatus ls" dropbox
 complete -f -X '*.@(o|so|so.|hi!(conf)|a|rpm|gif|GIF|jp?(e)g|JP?(E)G|mp3|MP3|mp?(e)g|MPG|avi|AVI|asf|ASF|ogg|OGG|class|CLASS|pdf|dvi|ps)' e
 complete -W "build clean help preview rebuild server" hakyll
 complete -F _mplayer totem
+
+XDG_DATA_DIRS=$HOME/.local/share:$XDG_DATA_DIRS
