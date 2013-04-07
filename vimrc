@@ -65,13 +65,13 @@ endif
 " Resize windows when terminal window changes size
 augroup general
     autocmd!
-    au VimResized * exe "normal! \<c-w>="
+    autocmd VimResized * exe "normal! \<c-w>="
 augroup END
 
 augroup filetype_vala
     autocmd!
-    au BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-    au BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 augroup END
 
 " highlight VSC conflicting line

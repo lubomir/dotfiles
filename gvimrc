@@ -1,7 +1,7 @@
 set columns=120
 set lines=60
-set nu
-set fdc=4
+set number
+set foldcolumn=4
 set colorcolumn=80
 set cursorline
 
