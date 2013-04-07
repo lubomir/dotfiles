@@ -63,10 +63,16 @@ else
 endif
 
 " Resize windows when terminal window changes size
-au VimResized * exe "normal! \<c-w>="
+augroup general
+    autocmd!
+    au VimResized * exe "normal! \<c-w>="
+augroup END
 
-au BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+augroup filetype_vala
+    autocmd!
+    au BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+    au BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+augroup END
 
 " highlight VSC conflicting line
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
