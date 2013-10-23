@@ -26,7 +26,7 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-for FILE in ~/.bash_aliases ~/.bash_functions ~/.term_colors /etc/bash_completion
+for FILE in ~/.bash_aliases ~/.bash_functions ~/.term_colors /etc/bash_completion /etc/profile.d/vte.sh
 do
     [ -f $FILE ] && . $FILE
 done
@@ -68,6 +68,6 @@ complete -W "disk mem" sleeper
 complete -W "status help puburl stop running start filestatus ls" dropbox
 complete -f -X '*.@(o|so|so.|hi!(conf)|a|rpm|gif|GIF|jp?(e)g|JP?(E)G|mp3|MP3|mp?(e)g|MPG|avi|AVI|asf|ASF|ogg|OGG|class|CLASS|pdf|dvi|ps|dep)' e
 complete -W "build clean help preview rebuild server" hakyll
-complete -F _mplayer totem
+#complete -F _mplayer totem
 
 XDG_DATA_DIRS=$HOME/.local/share:$XDG_DATA_DIRS
