@@ -27,17 +27,19 @@ NORMAL="$(tput sgr0)"
 
 file=$(basename $0)
 if [ $file = ".term_colors" ]; then
-    echo -n "${BLUE}normal blue$NORMAL\t"
+    echo -en "${BLUE}normal blue$NORMAL\t"
     echo "${BLUEB}bold blue$NORMAL"
-    echo -n "${RED}normal red$NORMAL\t"
-    echo "${REDB}bold red$NORMAL"
-    echo -n "${GREEN}normal green$NORMAL\t"
+    echo -en "${GREEN}normal green$NORMAL\t"
     echo "${GREENB}bold green$NORMAL"
-    echo -n "${YELLOW}normal yellow$NORMAL\t"
-    echo "${YELLOWB}bold yellow$NORMAL"
-    echo -n "${AZURE}normal azure$NORMAL\t"
+    echo -en "${AZURE}normal azure$NORMAL\t"
     echo "${AZUREB}bold azure$NORMAL"
-    echo -n "${WHITE}normal white$NORMAL\t"
+    echo -en "${RED}normal red$NORMAL\t"
+    echo "${REDB}bold red$NORMAL"
+    echo -en "${PURPLE}normal red$NORMAL\t"
+    echo "${PURPLEB}bold red$NORMAL"
+    echo -en "${YELLOW}normal yellow$NORMAL\t"
+    echo "${YELLOWB}bold yellow$NORMAL"
+    echo -en "${WHITE}normal white$NORMAL\t"
     echo "${WHITEB}bold white$NORMAL"
 fi
 
