@@ -96,3 +96,8 @@ set listchars=tab:▸\ ,eol:¬
 map <leader>l :set list!<CR>
 
 nnoremap <F6> :GundoToggle<CR>
+
+" TagBar settings
+nnoremap <silent> <F7> :TagbarToggle<CR>
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
