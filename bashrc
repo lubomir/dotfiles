@@ -69,4 +69,7 @@ complete -f -X '*.@(o|so|so.|hi!(conf)|a|rpm|gif|GIF|jp?(e)g|JP?(E)G|mp3|MP3|mp?
 complete -W "build clean help preview rebuild server" hakyll
 #complete -F _mplayer totem
 
+GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS
+
 XDG_DATA_DIRS=$HOME/.local/share:$XDG_DATA_DIRS
