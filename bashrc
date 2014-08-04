@@ -41,8 +41,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PATH=$HOME/.cabal/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$PATH
-CDPATH=".:Dokumenty/skola/podzim 2011"
+export PATH=./.cabal-sandbox/bin:$HOME/.cabal/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$PATH
 
 export LESS=" -R"
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
