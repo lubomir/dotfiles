@@ -2,45 +2,45 @@
 
 BOLD="$(tput bold)"
 
-BLUE="$(tput setf 1)"
+BLUE="$(tput setaf 4)"
 BLUEB="$BLUE$BOLD"
 
-GREEN="$(tput setf 2)"
+GREEN="$(tput setaf 2)"
 GREENB="$GREEN$BOLD"
 
-AZURE="$(tput setf 3)"
+AZURE="$(tput setaf 6)"
 AZUREB="$AZURE$BOLD"
 
-RED="$(tput setf 4)"
+RED="$(tput setaf 1)"
 REDB="$RED$BOLD"
 
-PURPLE="$(tput setf 5)"
+PURPLE="$(tput setaf 5)"
 PURPLEB="$PURPLE$BOLD"
 
-YELLOW="$(tput setf 6)"
+YELLOW="$(tput setaf 3)"
 YELLOWB="$YELLOW$BOLD"
 
-WHITE="$(tput setf 7)"
+WHITE="$(tput setaf 7)"
 WHITEB="$WHITE$BOLD"
 
 NORMAL="$(tput sgr0)"
 
-file=$(basename $0)
-if [ $file = ".term_colors" ]; then
-    echo -en "${BLUE}normal blue$NORMAL\t"
-    echo "${BLUEB}bold blue$NORMAL"
-    echo -en "${GREEN}normal green$NORMAL\t"
-    echo "${GREENB}bold green$NORMAL"
-    echo -en "${AZURE}normal azure$NORMAL\t"
-    echo "${AZUREB}bold azure$NORMAL"
-    echo -en "${RED}normal red$NORMAL\t"
-    echo "${REDB}bold red$NORMAL"
-    echo -en "${PURPLE}normal red$NORMAL\t"
-    echo "${PURPLEB}bold red$NORMAL"
-    echo -en "${YELLOW}normal yellow$NORMAL\t"
-    echo "${YELLOWB}bold yellow$NORMAL"
-    echo -en "${WHITE}normal white$NORMAL\t"
-    echo "${WHITEB}bold white$NORMAL"
+file=$(basename "$0")
+if [ "$file" = ".term_colors" ]; then
+    echo -ne "${BLUE}normal blue$NORMAL\t"
+    echo -e  "${BLUEB}bold blue$NORMAL"
+    echo -ne "${RED}normal red$NORMAL\t"
+    echo -e  "${REDB}bold red$NORMAL"
+    echo -ne "${GREEN}normal green$NORMAL\t"
+    echo -e  "${GREENB}bold green$NORMAL"
+    echo -ne "${YELLOW}normal yellow$NORMAL\t"
+    echo -e  "${YELLOWB}bold yellow$NORMAL"
+    echo -ne "${AZURE}normal azure$NORMAL\t"
+    echo -e  "${AZUREB}bold azure$NORMAL"
+    echo -ne "${PURPLE}normal purple$NORMAL\t"
+    echo -e  "${PURPLEB}bold purple$NORMAL"
+    echo -ne "${WHITE}normal white$NORMAL\t"
+    echo -e  "${WHITEB}bold white$NORMAL"
 fi
 
 # vim: ft=sh
