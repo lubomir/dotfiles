@@ -51,7 +51,7 @@ case "$TERM" in
     xterm*)
 
     # My fancy prompt that displays error code of last command (if it failed)
-    PS1="\[$YELLOW\]\h\[$NORMAL\]:\w \[$REDB\]"'$(R=$?; if [ $R -ne 0 ];then echo -ne "($R) ";fi)'"\[$NORMAL\]\n\$ "
+    PS1="\[$YELLOW\]\h\[$NORMAL\]:\w \[$REDB\]"'$(R=$?; if [ $R -ne 0 ];then echo -ne "($R) ";fi)'"\[$NORMAL\]"'$(BR=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || :); if [ -n "$BR" ]; then echo -ne "\[$BLUEB\]($BR)\[$NORMAL\]"; fi)'"\n\$ "
 
     ;;
     *)
