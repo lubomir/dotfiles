@@ -7,6 +7,6 @@ install()
 }
 
 for f in bashrc bash_aliases bash_functions vimrc gvimrc profile vim/colors/oblivion.vim; do
-    mkdir -pv $(dirname "$f")
+    mkdir -pv "$(dirname "$f")"
     install $f ~/.$f
 done
