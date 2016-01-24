@@ -41,7 +41,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PATH=./.cabal-sandbox/bin:$HOME/.cabal/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$PATH
 
 export LESS=" -R"
 
