@@ -46,14 +46,7 @@ set formatoptions+=ro
 
 set autoread
 
-filetype plugin on
-
-let g:disablerecent = 1
-let g:snips_author = 'Lubomír Sedlář'
-
-let g:haddock_browser = "epiphany"
-let g:haddock_browser_callformat = "%s --new-tab %s"
-let g:haddock_indexfiledir="$HOME/.vim/"
+filetype plugin indent on
 
 if has("gui_running")
     let g:Powerline_symbols = 'fancy'
@@ -77,7 +70,7 @@ augroup END
 " highlight VSC conflicting line
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-runtime! indent.vim
+"runtime! indent.vim
 
 map <F5>r :syntax off:syntax on
 map <F5>h /\(^\\| \)[iovksvzu]\( \\|$\)/
@@ -97,7 +90,17 @@ map <leader>l :set list!<CR>
 
 nnoremap <F6> :GundoToggle<CR>
 
+let g:ctrlp_extensions = ['tag']
+" List all files in given directory, respecting .gitignore and .agignore
+let g:ctrlp_user_command = 'ag -g "" %s'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " TagBar settings
 nnoremap <silent> <F7> :TagbarToggle<CR>
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
+let g:tagbar_compact = 1
+let g:tagbar_sort = 0
