@@ -43,7 +43,7 @@ fi
 
 export PATH=$HOME/.gem/ruby/1.9.1/bin:$HOME/.local/bin:$PATH
 
-export LESS=" -R"
+export LESS=" -RF"
 
 export EDITOR="vim"
 
